@@ -35,7 +35,7 @@ public class TestSerialization {
 		try(ObjectInputStream ois=new ObjectInputStream(new FileInputStream("product.dat"))){
 			while(true) {
 				try {
-				Product p=(Product)ois.readObject();
+				Product p=(Product)ois.readObject(); 
 				System.out.println(p);
 				}catch(EOFException e) {
 					System.out.println("reached to end of file......");
