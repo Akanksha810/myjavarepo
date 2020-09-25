@@ -41,6 +41,20 @@ public class Product implements Serializable{
 	public void setQty(int qty) {
 		this.qty = qty;
 	}
+	
+	
+	@Override
+	public int hashCode() {
+		return pid;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(this.pid==((Product)obj).pid) {
+			return true;
+		}
+		return false;
+		
+	}
 	@Override
 	public String toString() {
 		return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + ", qty=" + qty + "]";
