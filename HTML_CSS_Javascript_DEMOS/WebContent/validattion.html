@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="validatedata.js"></script>
+</head>
+<body>
+                                                
+<form action="listdemo.html" onsubmit="return validatedata()">
+<table>
+ <tr><td> Name:</td> <td><input type="text" name="nm" id="nm" required autofocus></td><td></td></tr>
+ <tr><td>password:</td><td><input type="password" name="pass" id="pass"></td></tr>
+ <tr><td> confirm password:</td><td><input type="password" name="cpass" id="cpass"></td><td><p id="errpass">  </p></td></tr>
+ <tr>
+  <td>Degree: </td>
+  <td><input type="radio" name="degree" id="be" value="BE"><label for="be">BE</label>
+  <input type="radio" name="degree" id="tech" value="BTECH"><label for="id">BTech</label>
+  <input type="radio" name="degree" id="msc" value="msc">MSC
+  </td><td><p id="errdeg"></p></td>
+  </tr>
+  <tr>
+   <td>Hobbies</td><td><input type="checkbox" name="hobbies" id="h1" value="Reading">Reading<br>
+   <input type="checkbox" name="hobbies" id="h2" value="Sleeping">Sleeping<br>
+   <input type="checkbox" name="hobbies" id="h3" value="Eating">Eating<br>
+   <input type="checkbox" name="hobbies" id="h4" value="biking">Biking<br></td><td><p id="errhobby"></p></td>
+  </tr>
+  <tr>
+   <td>Captcha</td><td>
+   <label id="captcha">ASDFGHH</label>
+   enter captcha :<input type="text" name="captcha" id="cap">
+   </td>
+  </tr>
+  <tr><td></td><td><button type="submit" name="btn" id="sub" value="reg">Register</button>
+  <button type="reset" name="btn" id="reset" value="cancel">Cancel</button></td></tr>
+
+ 
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
