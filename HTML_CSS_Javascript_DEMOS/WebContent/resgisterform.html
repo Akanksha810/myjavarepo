@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<table>
+  <tr><td>Name : </td><td><input type="text" name="nm" id="name" pattern="[0-9][A-Za-z]*" minlength="3" maxlength="8" autofocus required placeholder="Enter name"></td><td></td></tr>
+  <tr><td>Age : </td><td><input type="number" name="age" id="age" min="18" max="60"  required placeholder="Enter Age"></td><td></td></tr>
+  <tr><td>mobile : </td><td><input type="text" name="mob" id="mob" pattern="[0-9]{10}"  required placeholder="Enter Age"></td><td></td></tr>
+  <tr><td>Joining date : </td><td><input type="date" name="jdt" id="dt" min="2020-09-05" max="2020-09-30" value="2020-09-25" required placeholder="Enter Age"></td><td></td></tr>
+  <tr><td>Age : </td><td><input type="number" name="age" id="age" min="18" max="60"  required placeholder="Enter Age"></td><td></td></tr>
+  <tr><td>Color : </td><td><input type="color" name="color" id="color"></td><td></td></tr>
+  <tr><td>city : </td>
+  <td><select name="city">
+     <option value="pune">Pune</option>
+     <option value="mumbai" selected>Mumbai</option>
+     <option value="Nashik">Nashik</option>
+  </select></td><td></td></tr>
+  <tr>
+  <td>Gender: </td>
+  <td><input type="radio" name="gender" id="m" value="male">Male
+  <input type="radio" name="gender" id="f" value="female">Female
+  </td>
+  </tr>
+  <tr>
+  <td>Degree: </td>
+  <td><input type="radio" name="degree" id="be" value="BE">BE
+  <input type="radio" name="degree" id="tech" value="BTECH">BTech
+  <input type="radio" name="degree" id="msc" value="msc">MSC
+  </td>
+  </tr>
+  <tr>
+   <td>Hobbies</td><td><input type="checkbox" name="hobbies" id="h1" value="Reading">Reading<br>
+   <input type="checkbox" name="hobbies" id="h2" value="Sleeping" checked>Sleeping<br>
+   <input type="checkbox" name="hobbies" id="h3" value="Eating">Eating<br>
+   <input type="checkbox" name="hobbies" id="h4" value="biking">Biking<br></td>
+  </tr>
+  <tr><td></td><td><button type="submit" name="btn" id="sub" value="reg">Register</button>
+  <button type="reset" name="btn" id="reset" value="cancel">Cancel</button></td></tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
