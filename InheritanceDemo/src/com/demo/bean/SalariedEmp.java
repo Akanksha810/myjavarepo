@@ -15,6 +15,12 @@ public class SalariedEmp extends Employee {
 		bonus=b;
 	}
 	
+	public double calculateSal() {
+		return (float)salary+bonus;
+	}
+	
+	
+	
 	public String toString() {
 		return super.toString()+"\nSalary: "+salary+"\nBonus :"+bonus;
 	}

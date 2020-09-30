@@ -83,8 +83,9 @@ public class Person implements Comparable<Person> {
 		System.out.println("In person compareTo"+perId+"----"+ob.perId);
 		if(this.perId<ob.perId) {
 			return -1;
-		}else if(this.perId==ob.perId) {
+		}else if(this.perId==ob.perId ) {
 			return 0;
+			
 		}
 		else {
 			return 1;

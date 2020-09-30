@@ -14,8 +14,8 @@ public class TestFileRead {
 		 
 		 
 		try(BufferedInputStream bis=new BufferedInputStream(new FileInputStream("mydata.dat"));
-			BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream("mycopy.dat",true));) {
-					
+			BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream("mycopy.dat",true));	) {
+				
 			int data=bis.read();
 			while(data!=-1) {
 				bos.write(data);

@@ -1,7 +1,7 @@
 package com.demo.bean;
 import java.util.Date;
 
-public class Person {
+abstract public class Person {
 	private int perId;
 	private String perName;
 	private Date bDate;
@@ -70,7 +70,9 @@ public class Person {
 	 * public void finalize(){
 		
 	}*/
-	
+	public void f1() {
+		
+	}
 	
 	
 

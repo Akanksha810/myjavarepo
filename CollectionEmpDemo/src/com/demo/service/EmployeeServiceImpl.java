@@ -40,6 +40,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		System.out.println("enter desg");
 		String ds=sc.next();
 		int i=0;
+		///for 3 wrong attempts of invalid value of salary
 		for(i=0;i<3;i++) {
 			try {
 				System.out.println("enter Salary");

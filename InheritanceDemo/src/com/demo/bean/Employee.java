@@ -2,7 +2,7 @@ package com.demo.bean;
 
 import java.util.Date;
 
-public class Employee extends Person{
+abstract public class Employee extends Person{
      private String dept;
      private String desg;
      //default constructor
@@ -25,5 +25,7 @@ public class Employee extends Person{
     	 return super.toString()+"\nDepartment :"+dept+"\nDesignation  : "+desg;
     	 
      }
-	
+    abstract public double calculateSal();
+    //abstract double calculateSal(int s); 
+    //abstract public void f1(int i,float f); 
 }

@@ -9,6 +9,8 @@ import java.util.TreeSet;
 import com.demo.bean.Person;
 
 public class PersonDaoImpl implements PersonDao{
+	TreeSet<Integer> ts;	
+	Set<Person> s=new HashSet<>();
 	static Map<Integer,Person> perMap;
 	static {
 		perMap=new HashMap<>();
